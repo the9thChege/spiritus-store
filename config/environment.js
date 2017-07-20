@@ -18,6 +18,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+    apiKey: 'AIzaSyBH5GL2wUctg7t_hg488j6Hje2VIL2-w4k',
+    authDomain: 'spiritus-store.firebaseapp.com',
+    databaseURL: 'https://spiritus-store.firebaseio.com',
+    storageBucket: 'spiritus-store.appspot.com',
+  },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

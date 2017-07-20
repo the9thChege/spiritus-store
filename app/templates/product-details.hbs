@@ -1,0 +1,22 @@
+<div class="productImage">
+  <img src= {{model.image}}>
+</div>
+
+<h2>{{model.name}} <span class="price">${{model.price}}</span></h2>
+<h4>By {{model.seller}}</h4>
+
+{{#if addedToCart}}
+  <h5>This item is in your cart.</h5>
+{{else}}
+  <button {{action 'addToCart' model}}>Add to Cart</button>
+{{/if}}
+
+<p>{{model.description}} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+<div class="reviewList">
+  <h3>Reviews</h3> {{new-review saveReview="saveReview" product=model}}
+
+  {{#each model.reviews as |review|}}
+    {{review-tile review=review}}
+  {{/each}}
+</div>
