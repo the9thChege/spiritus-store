@@ -104,8 +104,12 @@ body a:hover {
 }
 
 .logo{
-  font-size: 25px;
-  color: #FF7216;
+  margin-top: 10px;
+  color: #15aa93;
+}
+
+.fa-home{
+  font-size: 50px;
 }
 
 .shopHeader {
